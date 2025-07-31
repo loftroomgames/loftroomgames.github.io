@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LRG - Developer Page</title>
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="sidebar-content">
+			<img src="images/logo.png" width="120" alt="Logo">
+			<h3>LoftRoom Games</h3>
+
+			<ul>
+				<li><a href="https://play.google.com/store/apps/dev?id=6817569762386703401" target="_blank" rel="noopener noreferrer">Google Play Page</a></li>
+				<li><a href="#" onclick="loadPage('docs/privacy-policy.html')">Privacy Policy</a></li>
+				<li><a href="#" onclick="loadPage('docs/terms.html')">Terms & Conditions</a></li>
+				<li><a href="#" onclick="loadPage('docs/ad-tech.html')">Ad Tech Providers</a></li>
+
+			</ul>
+		</div>
+
+		<div class="sidebar-footer">
+			<p>© 2025 LoftRoom Games | Made with <span class="emoji">❤️</span></p>
+		</div>
+	</div>
+
+    <div class="content">
+        <header>
+            <!-- You can add a page title or banner here -->
+        </header>
+
+
+		<main id="main-content">
+			<p>Welcome! Select a document from the sidebar.</p>
+		</main>
+
+
+        <footer>
+            <!-- Optional footer for the main content section -->
+        </footer>
+    </div>
+</body>
+
+<script>
+function loadPage(page) {
+    fetch(page)
+        .then(response => {
+            if (!response.ok) throw new Error("Page not found");
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("main-content").innerHTML = html;
+        })
+        .catch(error => {
+            document.getElementById("main-content").innerHTML = "<p>Error loading content.</p>";
+            console.error(error);
+        });
+}
+</script>
+
+</html>

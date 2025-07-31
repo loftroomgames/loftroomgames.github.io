@@ -1,0 +1,82 @@
+/* GENERAL ----------------------------------------- */
+body {
+    background-color: #999;
+    font-family: 'Press Start 2P', monospace;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+img {
+    border: 2px solid #dd5500;
+    border-radius: 16px;
+	width: 70px;
+}
+
+
+/* SIDEBAR ----------------------------------------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;             
+    text-align: center;
+}
+
+
+.sidebar h3 {
+    font-size: 1em;
+    margin-bottom: 150px;
+}
+
+.sidebar ul {
+    list-style-type: " > ";
+}
+
+.sidebar li {
+	text-align: left;
+	padding: 7px;
+}
+
+.sidebar a {
+    color: #ff5500;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+
+.sidebar-footer {
+    font-size: 0.55em;
+    text-align: center;
+	margin-bottom: 25px;
+}
+
+.emoji {
+    font-family: sans-serif;
+	font-size: 1.4em;
+    display: inline-block;
+    position: relative;
+	bottom: 2px;
+}
+
+
+
+/* CONTENT ----------------------------------------- */
+.content {
+    margin-left: 350px;
+    padding: 20px;
+}
