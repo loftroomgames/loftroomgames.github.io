@@ -15,10 +15,9 @@
 
 			<ul>
 				<li><a href="https://play.google.com/store/apps/dev?id=6817569762386703401" target="_blank" rel="noopener noreferrer">Google Play Page</a></li>
-				<li><a href="#" onclick="loadPage('documents/privacy-policy.html')">Privacy Policy</a></li>
-				<li><a href="#" onclick="loadPage('documents/terms-and-conditions.html')">Terms & Conditions</a></li>
-				<li><a href="#" onclick="loadPage('documents/ad-technology-providers.html')">Ad Tech Providers</a></li>
-
+				<li><a href="documents/privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+				<li><a href="documents/terms-and-conditions.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
+				<li><a href="documents/ad-technology-providers.html" target="_blank" rel="noopener noreferrer">Ad Tech Providers</a></li>
 			</ul>
 		</div>
 
@@ -43,25 +42,5 @@
         </footer>
     </div>
 </body>
-
-<script>
-
-function loadPage(page)
-{
-    fetch(page)
-        .then(response => {
-            if (!response.ok) throw new Error("Page not found");
-            return response.text();
-        })
-        .then(html => {
-            document.getElementById("main-content").innerHTML = html;
-        })
-        .catch(error => {
-            document.getElementById("main-content").innerHTML = "<p>Error loading content.</p>";
-            console.error(error);
-        });
-}
-
-</script>
 
 </html>
