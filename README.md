@@ -4,9 +4,9 @@ This GitHub Pages repository hosts the official legal documents for apps publish
 These documents are required to comply with Google Play policies and AdMob advertising standards.
 
 ## 📄 Hosted Documents
-- [Privacy Policy](https://yourusername.github.io/your-repo/privacy-policy.html)
-- [Terms and Conditions](https://yourusername.github.io/your-repo/terms-and-conditions.html)
-- [Ad Technology Providers](https://yourusername.github.io/your-repo/ad-technology-providers.html)
+- [Privacy Policy](https://loftroomgames.github.io/documents/privacy-policy.html)
+- [Terms and Conditions](https://loftroomgames.github.io/documents/terms-and-conditions.html)
+- [Ad Technology Providers](https://loftroomgames.github.io/documents/ad-technology-providers.html)
 
 These documents are freely accessible and are referenced in my Google Play Store app listings as part of my commitment to transparency and user trust.
 
