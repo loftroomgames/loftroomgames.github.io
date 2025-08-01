@@ -40,6 +40,14 @@ img {
 }
 
 
+/* CORECTION FOR MOBILE SITE */
+@media (max-width: 768px) {
+	.PANEL {
+		height: 60vh;
+	}
+}
+
+
 .PANEL h1 {
 	text-align: center;
     font-size: 1.2em;
