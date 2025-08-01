@@ -1,110 +1,94 @@
-/* STYLE.CSS */
+/* 1. Reset & base */
 body {
-    background: linear-gradient(180deg, #502050, #201020);
-    font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  
+  background-color: #111;
+  background-image:
+    linear-gradient(0deg, transparent 50%, rgba(100,0,100,0.5) 75%),
+    linear-gradient(90deg, transparent 50%, rgba(100,0,100,0.5) 75%);
+  background-size: 10px 10px;
+  
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1em;
 }
 
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 70px;
-    width: 70px;
-}
-
-
-
-/* MAIN PANEL */
+/* 2. Main panel */
 .PANEL {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	max-height: 100vh;
-	height: auto;
-	overflow-y: auto;
-    width: 600px;
+  position: fixed;
+  inset: 0;               /* top:0; right:0; bottom:0; left:0; */
+  width: 800px;
+  margin: 0 auto;         /* center horizontally */
+  max-height: 1024px;
+  height: 90vh;
+  overflow-y: auto;
+  
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+  
+  background-color: #111;
+  background-image:
+    linear-gradient(0deg, transparent 50%, rgba(255,255,255,0.05) 75%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.05) 75%);
+  background-size: 10px 10px;
+  
+  color: #fff;
+  border: 2px solid white;
 
-    background: linear-gradient(to bottom, #444, #111);
-    color: #ffffff;
-
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
-
-	border-bottom-left-radius: 70px;
-	border-bottom-right-radius: 70px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;             
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* 3. Sidebar logo */
+.sidebar-content img {
+  display: block;
+  margin: 2em auto 0;     /* top, auto-sides */
+  width: 100px;
+  border-radius: 70px;
+}
 
+/* 4. Headings & lists */
 .PANEL h1 {
-	text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 70px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 70px;
 }
 
 .PANEL ul {
-	font-size: 1em;
-	list-style: " > ";
-	padding: 0;
-	margin: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;       /* removes default bullets */
 }
-
 
 .PANEL li {
-	padding: 7px;
+  padding: 7px 0;
 }
 
-
+/* 5. Footer */
 .PANEL_FOOTER {
-	color: #bbb;
-    font-size: 0.6em;
-    text-align: center;
-	margin-bottom: 40px;
+  color: #ccc;
+  font-size: 0.6em;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-
+/* 6. Emoji tweak */
 .emoji {
-	font-size: 1.4em;
-    display: inline-block;
-    position: relative;
-	bottom: 2px;
+  font-size: 1.4em;
+  position: relative;
+  bottom: 2px;
 }
 
-
-
-
-/* CUSTOM LINK BUTTONS */
-.coffee-link {
-  color: yellow;
+/* 7. Links & hover state */
+a {
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
-.coffee-link:hover {
-  color: white;
-}
+a.googleplay-link { color: lightblue; }
+a.doc-link        { color: orange;    }
+a.coffee-link     { color: yellow;    }
 
-
-.googleplay-link {
-  color: lightblue;
-  text-decoration: none;
-}
-
-.googleplay-link:hover {
-  color: white;
-}
-
-
-.doc-link {
-  color: orange;
-  text-decoration: none;
-}
-
-.doc-link:hover {
+a:hover {
   color: white;
 }
