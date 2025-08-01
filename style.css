@@ -57,7 +57,7 @@ body {
 .PANEL ul {
   margin: 0;
   padding: 0;
-  list-style: none;       /* removes default bullets */
+  list-style: " > ";       /* removes default bullets */
 }
 
 .PANEL li {
