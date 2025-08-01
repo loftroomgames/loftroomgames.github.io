@@ -4,6 +4,7 @@ body {
     font-family: 'Press Start 2P', monospace;
 }
 
+
 img {
     display: block;
     margin-left: auto;
@@ -21,14 +22,14 @@ img {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	max-height: 95vh;
+	max-height: 100vh;
 	height: auto;
 	overflow-y: auto;
     width: 600px;
 
     background: linear-gradient(to bottom, #444, #111);
     color: #ffffff;
-	
+
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
 
 	border-bottom-left-radius: 70px;
@@ -44,7 +45,7 @@ img {
 .PANEL h1 {
 	text-align: center;
     font-size: 1.2em;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .PANEL ul {
