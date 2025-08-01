@@ -1,6 +1,6 @@
 /* STYLE.CSS */
 body {
-    background-color: #505;
+    background: linear-gradient(180deg, #502050, #201020);
     font-family: 'Press Start 2P', monospace;
 }
 
@@ -21,15 +21,17 @@ img {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	height: 100vh;
+	height: 95vh;
 	overflow-y: auto;
-    width: 500px;
+    width: 600px;
 
-    background-color: #333;
+    background: linear-gradient(to bottom, #444, #111);
     color: #ffffff;
 	
-    box-shadow: -25px 0 15px rgba(0, 0, 0, 0.3), 25px 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
 
+	border-bottom-left-radius: 70px;
+	border-bottom-right-radius: 70px;
 
     display: flex;
     flex-direction: column;
@@ -57,23 +59,11 @@ img {
 }
 
 
-.PANEL a {
-    color: #ff5500;
-    text-decoration: none;
-}
-
-.PANEL a:hover {
-    color: white;
-}
-
-
-
-
 .PANEL_FOOTER {
 	color: #bbb;
     font-size: 0.6em;
     text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 
@@ -82,4 +72,37 @@ img {
     display: inline-block;
     position: relative;
 	bottom: 2px;
+}
+
+
+
+
+/* CUSTOM LINK BUTTONS */
+.coffee-link {
+  color: yellow;
+  text-decoration: none;
+}
+
+.coffee-link:hover {
+  color: white;
+}
+
+
+.googleplay-link {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.googleplay-link:hover {
+  color: white;
+}
+
+
+.doc-link {
+  color: orange;
+  text-decoration: none;
+}
+
+.doc-link:hover {
+  color: white;
 }
