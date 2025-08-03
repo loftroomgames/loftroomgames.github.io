@@ -1,4 +1,5 @@
-# Developer Legal Documents
+## 🌐 Developer Web Page & Legal Documents
+---
 
 This GitHub Pages repository hosts the official legal documents for apps published by LoftRoom Games on the Google Play Store.
 These documents are required to comply with Google Play policies and AdMob advertising standards.
